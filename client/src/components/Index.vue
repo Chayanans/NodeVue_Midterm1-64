@@ -1,24 +1,25 @@
 <template>
   <div>
-    <h1>Get All Users</h1>
+    <h1>Laptop</h1>
     <div v-if="users.length">
-      <h4>จำนวนผู้ใช้งาน {{ users.length }}</h4>
+      <h4>จำนวนสินค้าที่เหลือ {{ users.length }}</h4>
       <p>
         <button v-on:click="navigateTo('/user/create')">
-            สร้างผู้ใช้งาน
+            สร้างสเปคของLabTop
           </button>
       </p>
       <div v-for="user in users" v-bind:key="user.id">
-        <p>id: {{ user.id }}</p>
-        <p>ชื่อ-นามสกุล: {{ user.name }} - {{ user.lastname }}</p>
-        <p>Email: {{ user.email }}</p>
-        <p>Password: {{ user.password }}</p>
+        <p>เครื่องที่: {{ user.id }}</p>
+        <p>ชื่อรุ่น: {{ user.name }}</p>
+        <p>สเปค:{{ user.lastname }}</p>
+        <p>ช่องทางการติดต่อ(email): {{ user.email }}</p>
+        <p>ราคา: {{ user.password }}</p>
         <p>
           <button v-on:click="navigateTo('/user/' + user.id)">
-            ดูข้อมูลผู้ใช้
+            ดูข้อมูลLabTop
           </button>
           <button v-on:click="navigateTo('/user/edit/' + user.id)">
-            แก้ไขข้อมูล
+            แก้ไขสเปคLabTop
           </button>
           <button v-on:click="deleteUser(user)">
             ลบข้อมูล

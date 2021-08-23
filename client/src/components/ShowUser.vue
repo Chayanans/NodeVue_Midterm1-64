@@ -1,10 +1,11 @@
 <template>
   <div>
-    <h1>Show User</h1>
-    <p>id: {{ userId }}</p>
-    <p>ชื่อ - นามสกุล {{ user.name }} - {{ user.lastname }}</p>
-    <p>email: {{ user.email }}</p>
-    <p>password: {{ user.password }}</p>
+    <h1>รายละเอียดLabTop</h1>
+    <p> {{ userId }}</p>
+    <p>รุ่น {{ user.name }}</p>
+    <p>สเปค {{ user.lastname }}</p>
+    <p>ช่องทางการติดต่อ(email): {{ user.email }}</p>
+    <p>ราคา: {{ user.password }}</p>
   </div>
 </template>
 <script>
